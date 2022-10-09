@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  font-family: "Orbitron", sans-serif;
+}
+.container {
+  margin: 15px;
+  margin-top: 0px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-container div:nth-child(2) {
+  /* border: 5px solid yellow; */
+  flex-grow: 6;
+}
+.navbar-container div:nth-child(1) {
+  flex-grow: 1;
+}
+.navbar-container div:nth-child(3) {
+  flex-grow: 3;
+}
+.list {
+  display: flex;
+  list-style: none;
+  padding-left: 120px;
+  padding-right: 180px;
+  justify-content: space-around;
+}
+.list-item {
+  font-size: 20px;
+}
+.list-item:hover {
+  font-weight: bold;
+}
+.list-item:hover::after {
+  content: "";
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: 3px solid black;
+}
+.button-group {
+  display: flex;
+}
+.search-icon {
+  align-self: center;
+}
+.nav-button {
+  align-self: center;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 4px solid black;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+/*BODY SECTION*/
+
+.hero-container {
+  position: relative;
+  display: flex;
+  height: 580px;
+}
+.globe + div > img {
+  height: 450px;
+  position: relative;
+  top: 70px;
+}
+.square > img {
+  height: 350px;
+  position: absolute;
+  left: 80px;
+  top: 230px;
+}
+
+.hero-heading {
+  font-weight: bold;
+  font-size: 350%;
+}
+
+.hero-container-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-description {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: -2%;
+  margin-bottom: 7%;
+  border: 2px solid red;
+}
+.contact-heading {
+  font-family: "Montserrat";
+}
+
+.star img {
+  height: 50px;
+}
+.star {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+}
+.globe img {
+  height: 60px;
+}
+
+.globe {
+  position: absolute;
+  top: 15px;
+  left: 600px;
+}
+.hero-container-right div:nth-child(3) {
+  border: 2px solid red;
+  /* width: 60%;
+  height: 50%; */
+}
+.hero-container-right div:nth-child(4) {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-email {
+  background-color: #fff;
+  width: 150px;
+  height: 25px;
+  border-radius: 7px;
+}
+.button-join {
+  background-color: black;
+  color: white;
+  height: 25px;
+  margin-left: 10px;
+  border-radius: 7px;
+}
